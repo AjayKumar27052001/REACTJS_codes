@@ -1,7 +1,22 @@
 import React, { useEffect, useState } from "react";
 import App1 from "./SearchBar";
 import TabsApp from "./TabsApp";
-import DropdownApp from "./Dropdown";
+
+import RatingApp1 from "./Ratingfunctionality";
+import FormsubmitApp from "./FormsubmitApp";
+import MultiStepFormAppf from "./Multistepform";
+//import Formsubmit2 from "./Formsubmit2";
+import DynamicFormApp from "./Dynamicform";
+import Formsubmit2 from "./Formsubmit2";
+
+import PostLists from "./ApiFetch";
+//import PostsList from "./ApiFetch";
+//import Formsubmit2 from "./Formsubmit2";
+//import MultistepformApp from "./Multistepform";
+//import FormsubmitApp from "./Multistepform";
+//import MultiStepFormAppf from "./Multistepform";
+//import FormsubmitApp from "./FormsubmitApp";
+//import DropdownApp from "./Dropdown";
 //import TabsApp from "./Dropdowm";
 //import DropdownApp from "./Dropdowm";
 
@@ -35,8 +50,15 @@ const App = () => {
     <div>
       <div>
         <App1 />
+        <PostLists />
+
+        <MultiStepFormAppf />
         <TabsApp />
-        <DropdownApp />
+        <DynamicFormApp />
+        <RatingApp1 />
+        <FormsubmitApp />
+        <MultiStepFormAppf />
+        <Formsubmit2 />
       </div>
       <h1>Bitcoin Price Index</h1>
       {data && (

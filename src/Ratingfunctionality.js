@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-
-const StarRating = ({ totalStars = 5 }) => {
+const RatingApp = () => {
   const [rating, setRating] = useState(0);
-
   return (
     <div>
-      {[...Array(totalStars)].map((star, index) => {
+      {[...Array(5)].map((value, index) => {
         const starValue = index + 1;
         return (
           <span
@@ -16,6 +14,7 @@ const StarRating = ({ totalStars = 5 }) => {
               color: starValue <= rating ? "gold" : "gray",
             }}
           >
+            {" "}
             ★
           </span>
         );
@@ -24,13 +23,7 @@ const StarRating = ({ totalStars = 5 }) => {
   );
 };
 
-const DropdownApp = () => {
-  return (
-    <div>
-      <h1>Star Rating</h1>
-      <StarRating />
-    </div>
-  );
+const RatingApp1 = () => {
+  return <RatingApp />;
 };
-
-export default DropdownApp;
+export default RatingApp1;
